@@ -17,18 +17,26 @@
 <div class="grid-container">
     <header class="header">
         <div class="left-header">
-            <img class="menu-img" src="svg/hamburger-menu.svg">
-            <img class="logo-img" src="svg/youtube-logo.svg">
+            <div class="menu-container">
+                <img class="menu-img" src="svg/hamburger-menu.svg">
+                <div class="tooltip">Menu</div>
+            </div>
+            <div class="youtube-container">
+                <img class="logo-img" src="svg/youtube-logo.svg">
+                <div class="tooltip">Homepage</div>
+            </div>
         </div>
         <div class="mid-header">
             <div class="search-bar-container">
                 <input class="search-bar" placeholder="Search">
                 <button class="search-button">
                     <img class="search-button-img" src="svg/search.svg">
+                    <div class="tooltip">Search</div>
                 </button>
             </div>
             <button class="voice-search-button">
                 <img class="voice-search-button-img" src="svg/voice-search-icon.svg">
+                <div class="tooltip">Search with your voice</div>
             </button>
         </div>
         <div class="right-header">
@@ -43,6 +51,7 @@
             <div class="notifications-container">
                 <img class="notifications" src="svg/notifications.svg">
                 <div class="tooltip">Notifications</div>
+                <div class="message-count">3</div>
             </div>
             <img class="profile" src="svg/images.jpg">
         </div>
@@ -76,15 +85,26 @@
     <main class="main">
         <div class="grid-item">
             <div class="thumbnail-container">
-                <img class="thumbnail" src="svg/thumbnail-1.webp">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <img class="thumbnail" src="svg/thumbnail-1.webp">
+                </a>
                 <span class="timestamp">14:20</span>
             </div>
             <div class="metadata">
                 <div class="left">
-                    <img class="author-logo" src="svg/images.jpg">
+                    <a class="logo-link" href="https://www.youtube.com/user/marquesbrownlee">
+                        <img class="author-logo" src="svg/images.jpg">
+                        <div class="author-tooltip">
+                            <img class="tooltip-logo" src="svg/channels4_profile.jpg">
+                            <div class="inner-flex">
+                                <p class="author">Marques Brownlee</p>
+                                <p class="subs">15M subscribers</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="right">
-                    <p class="title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="title"><a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">Talking Tech and AI with Google CEO Sundar Pichai!</a></p>
                     <p class="author-name">Marques Brownlee</p>
                     <p class="views-date">3.4M views · 6 months ago</p>
                 </div>
